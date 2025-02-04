@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            background-image: url(');
+            background-size: cover;https://media.istockphoto.com/id/1403500817/fr/photo/les-craggies-dans-les-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=RJamuWVgqPyduag57mo-XGcgxu5PDlV7wW9hA2wzrow='
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            transition: background-color 0.5s ease;
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: rgb(0, 0, 0);
+            padding: 2rem 0;
+            text-align: center;
+            transition: background 0.5s ease;
+        }
+        nav {
+            background-color: #444;
+            padding: 1rem 0;
+            text-align: center;
+            transition: background-color 0.5s ease;
+        }
+        nav a {
+            margin: 0 1.5rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff6347;
+            transform: scale(1.1);
+        }
+        .hero {
+            background: url('https://media.istockphoto.com/id/1317323736/fr/photo/une-vue-vers-le-haut-dans-le-ciel-de-direction-darbres.jpg?s=612x612&w=0&k=20&c=p9aqUkcvAg8vTprMftO1iYR2APm3ZAPL6SwTPgYADRs=') no-repeat center center/cover;
+            color: rgb(20, 2, 2);
+            padding: 4rem 0;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: slideIn 1s ease-in-out;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        .section h2 {
+            margin-bottom: 1rem;
+            color: #333;
+            font-family: 'Montserrat', sans-serif;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+        .section img:hover {
+            transform: scale(1.05);
+        }
+        .icon {
+            font-size: 2rem;
+            color: #6a11cb;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: rgb(202, 24, 24);
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            transition: background-color 0.5s ease;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mon Portfolio</h1>
+    </header>
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+        <a href="apropos.html"><i class="fas fa-user"></i> À propos</a>
+        <a href="projets.html"><i class="fas fa-folder-open"></i> Projets</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+    <div class="hero">
+        <h1>Bienvenue sur mon portfolio</h1>
+        <p>Je suis un développeur débutant passionné par la création de sites web.</p>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h2><i class="fas fa-user icon"></i> À propos de moi</h2>
+            <img src="https://media.istockphoto.com/id/1317323736/fr/photo/une-vue-vers-le-haut-dans-le-ciel-de-direction-darbres.jpg?s=612x612&w=0&k=20&c=p9aqUkcvAg8vTprMftO1iYR2APm3ZAPL6SwTPgYADRs=" alt="À propos de moi">
+            <p>Je suis un développeur web passionné par la création de sites web élégants et fonctionnels. J'aime apprendre de nouvelles technologies et les intégrer dans mes projets.</p>
+        </div>
+        <div class="section">
+            <h2><i class="fas fa-folder-open icon"></i> Mes Projets</h2>
+            <img src="https://media.istockphoto.com/id/1317323736/fr/photo/une-vue-vers-le-haut-dans-le-ciel-de-direction-darbres.jpg?s=612x612&w=0&k=20&c=p9aqUkcvAg8vTprMftO1iYR2APm3ZAPL6SwTPgYADRs=" alt="Mes Projets">
+            <p>Voici quelques-uns de mes projets récents. Chaque projet est une opportunité d'apprendre et de grandir
